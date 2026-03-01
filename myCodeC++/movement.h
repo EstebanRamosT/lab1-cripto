@@ -28,6 +28,8 @@ class Movement {
         
 
         friend ostream& operator<<( ostream&, Movement );
+
+        ~Movement();
 };
 
 #endif

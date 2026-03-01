@@ -9,7 +9,7 @@ class MovementInterface {
     public:
         virtual void sendCoin(Cryptocurrency coin, string token, string date, double value) = 0;
         virtual void receiveCoin(Cryptocurrency coin, string token, string date, double value) = 0;
-        virtual string viewMovements() = 0;
+        virtual void viewMovements() = 0;
 };
 
 #endif

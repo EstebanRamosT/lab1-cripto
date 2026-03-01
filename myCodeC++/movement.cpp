@@ -44,6 +44,11 @@ ostream& operator<<(ostream& mssg, Movement m){
     mssg << "[" << type << "] "
      << "Coin: " << m.coin.getID()
      << " | Value: " << m.value
-     << " | " << m.transaction->print();
+     << " | " << m.transaction->print() 
+     << "\n";
     return mssg;
+}
+
+Movement::~Movement(){
+    delete transaction;
 }

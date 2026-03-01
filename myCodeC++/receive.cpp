@@ -5,11 +5,9 @@
 using namespace std;
 
 Receive::Receive(){
-
 }
 
-Receive::Receive(string t, string d): Transaction(t, d){
-    
+Receive::Receive(string t, string d): Transaction(t, d){    
 }
 
 int Receive::getType(){

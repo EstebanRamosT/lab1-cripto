@@ -19,15 +19,22 @@ class Wallet: public CryptocurrencyInterface, public MovementInterface {
     public:
 
         Wallet();
+
+        vector<Cryptocurrency> getCoins();
         
         void createCoin(Cryptocurrency) override;
         void viewCoin() override;
         void editCoin() override;
         void deleteCoin() override;
-        
+
+        double calculateBalance(string );
+        int listCoins();
+
         void sendCoin(Cryptocurrency, string, string, double) override;
         void receiveCoin(Cryptocurrency, string, string, double) override;
-        string viewMovements() override;
+        void viewMovements() override;
+
+        ~Wallet();
 };
 
 #endif
